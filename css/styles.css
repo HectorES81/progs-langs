@@ -1,0 +1,46 @@
+:root {
+  --color1: #222222; /* black */
+  --color2: #d3d7cf; /* white */
+  --color3: #cc0000; /* red */
+  --color4: #4e9a06; /* green */
+  --color5: #fce94f; /* yellow */
+  --color6: #34e2e2; /* cyan */
+  --color7: #32afff; /* blue */
+}
+
+body {
+  background-color: var(--color1);
+  color: var(--color2);
+  font-family: sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+   font-family: Courier;
+
+}
+.compara-panes {
+  display:grid;
+  grid-auto-columns: 2;
+}
+section {
+  padding: 10px;
+  box-sizing: border-box;
+  border: thick solid #222222;
+/*   display:none; */
+  width: 30%;
+}
+.selected-section {
+  border: thick solid #d3d7cf;
+  color: #4e9a06;
+  display: block;
+}
+nav.concepts {
+  text-transform: lowercase;
+  color: var(--color7);
+}
+
+.lang-tabs > li {
+  display: inline-block;
+  width: fit-content;
+  border: 1px solid var(--color2);
+  padding: 5px;
+}
